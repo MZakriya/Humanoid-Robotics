@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // For Docusaurus, we might need to adapt this
+import { useHistory } from 'react-router-dom'; // Using useHistory for react-router-dom v5 compatibility
 import './AuthForm.css';
 
 // API base URL - configurable (can be set via environment variables in a real app)
@@ -28,7 +28,7 @@ const AuthForm = ({ mode = 'signup', onAuthSuccess }) => {
     { value: 'expert-fullstack', label: 'Expert/Full Stack Robotics' }
   ];
 
-  const navigate = useNavigate || (() => {}); // Fallback if useNavigate is not available
+  const history = useHistory || (() => {}); // Fallback if useHistory is not available
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -105,7 +105,11 @@ const AuthForm = ({ mode = 'signup', onAuthSuccess }) => {
       }
 
       // Redirect to home page after successful auth
-      window.location.href = '/';
+      if (history && history.push) {
+        history.push('/');
+      } else {
+        window.location.href = '/';
+      }
 
       if (onAuthSuccess) {
         onAuthSuccess({ ...formData, userId: 'mock-user-id' });

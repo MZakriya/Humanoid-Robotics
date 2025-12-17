@@ -18,7 +18,7 @@ const config = {
   organizationName: 'your-org', // Usually your GitHub org/user name.
   projectName: 'your-repo', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -78,13 +78,13 @@ const config = {
             items: [
               {
                 label: 'Sign In',
-                to: '/auth',
-                activeBasePath: '/auth',
+                to: '/signin',
+                activeBasePath: '/signin',
               },
               {
                 label: 'Sign Up',
-                to: '/auth',
-                activeBasePath: '/auth',
+                to: '/signup',
+                activeBasePath: '/signup',
               },
             ],
           },
