@@ -72,11 +72,21 @@ const config = {
             label: 'Textbook',
           },
           {
-            type: 'doc',
+            type: 'dropdown',
+            label: 'Account',
             position: 'right',
-            label: 'Sign In',
-            to: '/signin',
-            className: 'navbar-signin-button',
+            items: [
+              {
+                label: 'Sign In',
+                to: '/auth',
+                activeBasePath: '/auth',
+              },
+              {
+                label: 'Sign Up',
+                to: '/auth',
+                activeBasePath: '/auth',
+              },
+            ],
           },
           {
             href: 'https://github.com/facebook/docusaurus',

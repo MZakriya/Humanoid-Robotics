@@ -103,7 +103,9 @@
       "Bash(cmd /c 'ren \"\"nul\"\" \"\"nul_file\"\"')",
       "Bash(cmd /c 'move \"\"nul\"\" \"\"nul_file.txt\"\"')",
       "Bash(git add .)",
-      "Bash(git commit -m \"Add professional README.md with Modern Dark Purple aesthetic and complete project documentation\")"
+      "Bash(git commit -m \"Add professional README.md with Modern Dark Purple aesthetic and complete project documentation\")",
+      "Bash(npx docusaurus build)",
+      "Bash(cmd /c \"npx docusaurus build\")"
     ],
     "deny": [],
     "ask": []
