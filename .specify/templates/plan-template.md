@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Docusaurus-First Documentation**: Ensure all educational modules will be implemented as structured Docusaurus documents with proper navigation and search functionality
+- **RAG-Based Intelligence Integration**: Verify that any backend services will use FastAPI, Neon Serverless Postgres, and Qdrant Cloud as specified
+- **Test-Driven Content Development**: Confirm that all content and code will follow TDD principles with proper learning objectives and assessment criteria
+- **Multi-Module Educational Coherence**: Ensure the feature maintains pedagogical consistency with other modules and progressive complexity
+- **Open Source Accessibility**: Verify that all code and content will be open source and deployable via GitHub Pages
+- **Technology Stack Compliance**: Confirm adherence to the mandated technology stack (Docusaurus, FastAPI, Neon, Qdrant)
 
 ## Project Structure
 

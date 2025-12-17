@@ -1,0 +1,85 @@
+.translate-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.translate-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.translate-button, .revert-button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.translate-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.translate-button:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.revert-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+.revert-button:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+.translate-button:disabled, .revert-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.translate-button.loading {
+  background-color: #cccccc;
+}
+
+.loading-text::after {
+  content: '';
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+.translate-error {
+  color: #f44336;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.translate-notice {
+  margin-top: 8px;
+}
+
+.translate-notice small {
+  color: #666;
+  font-style: italic;
+}

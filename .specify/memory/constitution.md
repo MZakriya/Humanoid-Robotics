@@ -1,55 +1,59 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 1.0.0 → 1.0.0 (initial creation)
+- Modified principles: All principles added (new constitution)
+- Added sections: All sections added (new constitution)
+- Removed sections: None
+- Templates requiring updates: N/A (initial creation)
+- Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Textbook & Platform Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Docusaurus-First Documentation
+Every educational module must be implemented as a structured Docusaurus document with clear navigation, search functionality, and responsive design. All content must be accessible, well-organized, and follow consistent formatting standards with proper code examples and visual aids.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. RAG-Based Intelligence Integration
+The platform must feature a robust Retrieval-Augmented Generation (RAG) chatbot using FastAPI backend, Neon Serverless Postgres for metadata, and Qdrant Cloud for vector storage. The chatbot must handle both general queries and context-specific questions based on user-selected text.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Test-Driven Content Development (NON-NEGOTIABLE)
+All educational content and platform features must follow TDD principles: Learning objectives defined → Assessment criteria approved → Content gaps identified → Then develop. Red-Green-Refactor cycle strictly enforced for both content and code.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Multi-Module Educational Coherence
+All 10 modules (Embodied Intelligence, ROS 2, Kinematics, 3D Simulation, VSLAM, Motion Planning, DRL, Manipulation, VLA/Cognitive Robotics, Capstone/Ethics) must maintain pedagogical consistency, progressive complexity, and cross-module integration where applicable.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Open Source Accessibility
+All platform code, educational content, and deployment configurations must be open source and publicly accessible via GitHub Pages. Documentation must be comprehensive and deployment processes must be reproducible by any user.
 
-### [PRINCIPLE_6_NAME]
+### VI. Technology Stack Compliance
+All implementations must strictly adhere to the mandated technology stack: Docusaurus for frontend, FastAPI for backend services, Neon for database storage, and Qdrant for vector databases. No alternative technologies may be substituted without explicit approval.
 
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
+## Technical Requirements
 <!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+The platform must support the following technical specifications:
+- Deployable to GitHub Pages with automated CI/CD pipeline
+- RAG chatbot must respond to queries within 3-5 seconds for 95% of requests
+- Educational content must be searchable and indexed
+- Platform must support interactive code examples and visualizations
+- All code examples must be tested and verified for accuracy
+- Mobile-responsive design for all educational materials
 
-## [SECTION_3_NAME]
+## Development Workflow
 <!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The development process must follow these requirements:
+- All educational content must undergo peer review before publication
+- Code implementations must include comprehensive unit and integration tests
+- Feature branches must be created for each module development
+- Pull requests must include both content and code changes
+- All deployments must be tested on staging before production
+- Documentation updates must be synchronized with code changes
 
 ## Governance
 <!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development and content creation for the Physical AI & Humanoid Robotics Textbook & Platform. All PRs and reviews must verify compliance with these principles. Any deviation from the specified technology stack or educational requirements must be documented and approved. All changes must maintain backward compatibility where possible.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07

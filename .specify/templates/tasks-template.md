@@ -62,12 +62,12 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T004 Setup Docusaurus documentation framework with proper navigation and search
+- [ ] T005 [P] Implement FastAPI backend with Neon Serverless Postgres integration
+- [ ] T006 [P] Setup Qdrant Cloud vector database connection for RAG functionality
+- [ ] T007 Create base educational content models and schema for all 10 modules
+- [ ] T008 Configure RAG chatbot infrastructure with context-specific query handling
+- [ ] T009 Setup GitHub Pages deployment pipeline with automated CI/CD
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -150,12 +150,14 @@ Examples of foundational tasks (adjust based on your project):
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
+- [ ] TXXX [P] Educational content review and pedagogical consistency validation across all modules
+- [ ] TXXX Code cleanup and refactoring for all educational examples and implementations
+- [ ] TXXX Performance optimization for RAG chatbot response times (target: <5s for 95% of queries)
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
-- [ ] TXXX Security hardening
-- [ ] TXXX Run quickstart.md validation
+- [ ] TXXX Security hardening for all components (FastAPI, database, vector store)
+- [ ] TXXX Run quickstart.md validation for deployment to GitHub Pages
+- [ ] TXXX Mobile responsiveness validation for all educational content
+- [ ] TXXX Cross-module integration testing for the 10-module curriculum
 
 ---
 

@@ -1,0 +1,78 @@
+.personalize-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.personalize-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.personalize-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.personalize-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.personalize-button.loading {
+  background-color: #cccccc;
+}
+
+.personalize-button.no-profile {
+  background-color: #ff9800;
+}
+
+.personalize-button.no-profile:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+.loading-text::after {
+  content: '';
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+.profile-warning {
+  font-size: 14px;
+}
+
+.personalize-error {
+  color: #f44336;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.profile-notice {
+  margin-top: 8px;
+}
+
+.profile-notice small {
+  color: #666;
+  font-style: italic;
+}
